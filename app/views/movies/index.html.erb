@@ -1,0 +1,13 @@
+<%= image_tag @movie['posters']['profile'] %>
+<h1><%= @movie['title'] %></h1>
+
+<pre><%= @movie.to_yaml %></pre>
+
+<% @movie.each do |key, value | %>
+  <strong><%= key %></strong><br />
+  <%= value %>
+
+ 
+  <br />
+
+  <% end %>
